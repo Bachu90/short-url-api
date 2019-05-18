@@ -4,7 +4,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #222;
-	background-color: #FaFaFa;
+	background-color: rgba(255,69,0,.3);
 	text-align: center;
 	line-height: 1.4em;
 }
@@ -32,7 +32,8 @@ code {
   font-family: monospace;
   padding: 2px;
   color: black;
-  background-color: #fff;
+  background-color: rgba(255,69,0,.5);
+  border-radius: 5px;
 }
 ol {
 	list-style-position: inside;
@@ -58,6 +59,7 @@ form {
   margin: 10px auto;
   padding: 20px;
   max-width: 600px;
+  background-color: rgba(255,69,0,.3);
 }
 
 label {
@@ -71,4 +73,18 @@ input {
 input[type=text] {
   width: 220px;
   text-align: center;
+  background-color: transparent;
+  border-style: solid;
+}
+
+input[type=submit]{
+  background-color: rgba(255,69,0,.4);
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(255,69,0,1);
+  color: #fff;
 }
